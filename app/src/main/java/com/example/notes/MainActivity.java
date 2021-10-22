@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     static SharedPreferences sharedPreferences;
 
     public void onButtonClick(View view){
-        //1. Get username and password via EditText view.
+        //1. Get the username and password via EditText view.
         EditText myTextField = (EditText) findViewById(R.id.username);
         String userEditString = myTextField.getText().toString();
         //2. Add username to SharedPreferences object.

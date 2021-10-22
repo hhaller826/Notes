@@ -42,6 +42,7 @@ public class MainActivity2 extends AppCompatActivity {
 
     public void goToActivity1(){
         Intent intent = new Intent(this, MainActivity.class);
+        //Erase username from shared preferences.
         sharedPreferences.edit().remove(MainActivity.usernameKey).apply();
         startActivity(intent);
     }
